@@ -1,0 +1,274 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; 
+}
+body
+{
+    color:black;
+}
+.header
+{
+    position :fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo
+{
+    position: relative;
+    font-size: 25px;
+    color: red;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+}
+.navbar a
+{
+    display: inline-block;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover
+{
+    color: blue;
+    box-shadow: 0 0 20px lightblue;
+}
+.home
+{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url("C:/Users/akhil/OneDrive/Pictures/reddy6.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home-content
+{
+    max-width: 600px;
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.home-content h3 span{
+    color: brown;
+}
+.home-content h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin: -3px 0;
+    color: blue;
+}
+.home-content p{
+    font-size: 20px;
+    color: blueviolet;
+}
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    transition: .5s ease;
+    margin: 30px 15px 30px 0;
+}
+.home-sci a:hover{
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background : #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn-box:hover{
+   box-shadow: 0 0 5px cyan, 
+   0 0 25px cyan, 0 0 50px cyan, 
+   0 0 100px cyan , 0 0 200px cyan
+}
+.about{
+	display:flex;
+	flex-direction:column;
+	margin-top:2rem;
+	height:600px;
+
+}
+.about .about1{
+	text-align:center;
+	font-size:30px;
+	font-style:bold;
+	font-family:century;
+    padding-top: 50px;
+    background-color: #ddd;
+}
+.about .image {
+    padding-top: 10px;
+    max-width: 25%;
+    max-height:28%;
+    float: left;
+  }
+.about .about2{
+	font-size:20px;
+	font-family:Arial;
+    font-style: bold;
+        padding-left: 20px;
+        padding-top: 15%;
+        float: left;
+}
+.about .about2 .about3{
+	color:blue;
+	font-style:bold;
+
+}
+.sky{
+	display:flex;
+	flex-direction:column;
+	height:500px;
+
+}
+.sky .skill1{
+	text-align:center;
+	font-size:30px;
+	background-color:green;
+    padding-top: 50px;
+}
+.sky .skill {
+  padding-top: 50px;
+  width: 100%; 
+  background-color: #ddd; 
+}
+.skills1 {
+	width: 90%;
+	background-color: #04AA6D;
+	text-align:right;
+	color:white;
+	} 
+.skills3 {
+	width: 80%; 
+	background-color: #2196F3;
+	text-align:right;
+	color:white;
+	}
+.skills5 {
+	width: 70%; 
+	background-color: #f44336;
+	text-align:right;
+	color:white;
+	} 
+.skills7 {
+	width: 65%;
+	background-color: #808080;
+	text-align:right;
+	color:white;
+	}
+.skills4 {
+    width: 75%;
+    background-color: aqua;
+    text-align: right;
+    color: white;
+}
+.skills2 {
+    width: 85%;
+    background-color: violet;
+    text-align: right;
+    color: white;
+}
+.skills6 {
+    width: 70%;
+    background-color: pink;
+    text-align: right;
+    color: white;
+}
+.skills8 {
+    width: 60%;
+    background-color: palegreen;
+    text-align: right;
+    color: white;
+}
+.pro {
+    padding: 32px 10px;
+    margin-top: 5rem;
+    height:600px;
+  }
+  .pro .pro1{
+      text-align:center;
+      color:red;
+      background-color: #ddd;
+      font-size:30px;
+      font-family:century;
+      font-style:bold;
+  }
+  .pro .pro2{
+      align-items:center;
+      font-family:cursive;
+      color:black;
+      font-size:20px;
+  }
+  .pro .pro3{
+    padding-top: 100px;
+      padding-left:50px;
+      font-style: bold;
+  }
+  .pro2 .pro4{
+      color:purple;
+      font-size:40px;
+  }	
+  .con{
+	display:flex;
+	flex-direction:column;
+	background-color:lightblue;
+	color:white;
+	margin-top:40px;
+	height:600px;
+}
+.con .con1{
+	text-align:center;
+	font-family:century;
+	color:red;
+}
+.con2{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	margin:20px 0px;
+	
+}
+.con4
+{
+	padding:12px;
+}
+#submit:hover{
+	cursor:pointer;
+	box-shadow:0 0 10px black;
+}
