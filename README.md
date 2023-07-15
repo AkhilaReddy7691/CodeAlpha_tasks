@@ -1,11 +1,12 @@
 # CodeAlpha_Task_1
   PORTFOLIO WEBSITE
   
-![imgt1](https://github.com/AkhilaReddy7691/CodeAlpha_Task_1/assets/139627720/73b75709-18b3-4aea-839d-ba04b1368856)
-![imgt2](https://github.com/AkhilaReddy7691/CodeAlpha_Task_1/assets/139627720/1f7fa071-4fdf-4125-b0e4-4cf4b4db42c6)
-![imgt3](https://github.com/AkhilaReddy7691/CodeAlpha_Task_1/assets/139627720/7b9c3b34-fc13-4346-8704-b86307b30f1d)
-![imgt4](https://github.com/AkhilaReddy7691/CodeAlpha_Task_1/assets/139627720/ac046186-e6a0-4213-99e3-cd7eceaeeaa1)
-![imgt5](https://github.com/AkhilaReddy7691/CodeAlpha_Task_1/assets/139627720/0d79ce98-64ce-4a57-bd9e-81cd75ae5ea5)
+![img1_t1](https://github.com/AkhilaReddy7691/CodeAlpha_Task_1/assets/139627720/d610961c-ca5c-4672-91d6-22a7f794fabf)
+![img2_t1](https://github.com/AkhilaReddy7691/CodeAlpha_Task_1/assets/139627720/b2ac0fd4-29e6-48fb-91bf-00a0aa8ee141)
+![img3_t1](https://github.com/AkhilaReddy7691/CodeAlpha_Task_1/assets/139627720/dba00e05-8d72-44ab-a594-a1680f169081)
+![img4_t1](https://github.com/AkhilaReddy7691/CodeAlpha_Task_1/assets/139627720/d9ade731-1fc9-4d37-8ae6-eb1d9d37af48)
+![img5_t1](https://github.com/AkhilaReddy7691/CodeAlpha_Task_1/assets/139627720/0762e138-2072-466c-83d0-101317ef6c8e)
+
 
 
 
