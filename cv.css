@@ -1,0 +1,77 @@
+
+#cv-template{
+    display: none;
+}
+.myimg{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.background{
+    background-color: lightblue;
+}
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    transition: .5s ease;
+    margin: 30px 15px 30px 0;
+}
+.social-icons a:hover{
+    background: #ddd;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background : white;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn-box:hover{
+   box-shadow: 0 0 5px cyan, 
+   0 0 25px cyan, 0 0 50px cyan, 
+   0 0 100px cyan , 0 0 200px cyan
+}
+.objective-header h3{
+    background-color: #ddd;
+    font-size: 28px;
+
+}
+
+.education-header h3{
+    background-color: #ddd;
+    font-size: 28px;
+
+}
+
+.skills-header h3{
+    background-color: #ddd;
+    font-size: 28px;
+}
+
+.languages-header h3{
+    background-color: #ddd;
+    font-size: 28px;
+}
+.pro-header h3{
+    background-color: #ddd;
+    font-size: 28px;
+}
+
+.print{
+    margin-top: 50px;
+}

@@ -1,0 +1,271 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resume generator</title>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel='stylesheet'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="cv.css">
+    </head>
+    <body>
+        <div class="container" id="cv-form">
+        <h1 class="text-center">Resume Builder</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Personal Details</h3>
+
+                <div class="form-group mt-2">
+                    <label for="nameField">Enter Name</label>
+                    <input
+                       type="text"
+                       id="nameField"
+                       placeholder="Enter here"
+                       class="form-control"
+                    />
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="contactField">Enter Contact Number</label>
+                    <input
+                       type="text"
+                       id="contactField"
+                       placeholder="+00 00 00 0000"
+                       class="form-control"
+                    />
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="emailField">Enter Email</label>
+                    <input
+                       type="text"
+                       id="emailField"
+                       placeholder="abc@gmail.com"
+                       class="form-control"
+                    />
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="addressField">Enter Address</label>
+                    <textarea
+                       id="addressField"
+                       placeholder="Enter here"
+                       class="form-control"
+                       rows="6"
+                    ></textarea>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label>Select your photo</label>
+                    <input id="imgField" type="file" class="form-control" />
+                </div>
+
+                <p class="text-secondary my-3">Follow me</p>
+
+                <div class="form-group">
+                    <label for="instaField">Instagram</label>
+                    <input
+                       type="text"
+                       id="instaField"
+                       placeholder="Enter here"
+                       class="form-control"
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="linkedField">Linkedin</label>
+                    <input
+                       type="text"
+                       id="linkedField"
+                       placeholder="Enter here"
+                       class="form-control"
+                    />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>Professional Details</h3>
+
+                <div class="form-group mt-2">
+                    <label>Objective</label>
+                    <textarea
+                    id="objectiveField"
+                       placeholder="Enter here"
+                       class="form-control"
+                    ></textarea>
+                </div>
+
+                <div class="form-group mt-2" id="e">
+                    <label>Education</label>
+                    <textarea
+                       placeholder="Enter here"
+                       class="form-control eField"
+                    ></textarea>
+                    <div class="container text-center mt-2" id="eAddButton">
+                        <button onclick="addNewEField()" class="btn btn-primary btn-sm">+</button>
+                    </div>
+                </div>
+
+                <div class="form-group mt-2" id="s">
+                    <label>Skills</label>
+                    <textarea
+                       placeholder="Enter here"
+                       class="form-control sField"
+                    ></textarea>
+                    <div class="container text-center mt-2" id="sAddButton">
+                        <button onclick="addNewSField()" class="btn btn-primary btn-sm">+</button>
+                    </div>
+                </div>
+
+                <div class="form-group mt-2" id="l">
+                    <label>Programming languages known</label>
+                    <textarea
+                       placeholder="Enter here"
+                       class="form-control lField"
+                    ></textarea>
+                    <div class="container text-center mt-2" id="lAddButton">
+                        <button onclick="addNewLField()" class="btn btn-primary btn-sm">+</button>
+                    </div>
+                </div>
+
+                <div class="form-group mt-2" id="p">
+                    <label>Personal Projects and Certifications</label>
+                    <textarea
+                       placeholder="Enter here"
+                       class="form-control pField"
+                    ></textarea>
+                    <div class="container text-center mt-2" id="pAddButton">
+                        <button onclick="addNewPField()" class="btn btn-primary btn-sm">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center mt-3">
+            <button onclick="generateCV()" class="btn btn-primary btn-lg">Generate CV</button>
+        </div>
+        </div>
+
+        <div class="container" id="cv-template">
+
+            <div class="row">
+                <div class="col-md-4 text-center py-5 background">
+                    <img src="https://www.nicepng.com/png/detail/249-2491703_contact-profile-user-default-female-suit-comments-default.png"
+                         height="500px"
+                         width="500px" 
+                         class="img-fluid myimg"
+                         id="imgtemplate"
+                    />
+
+                    <div class="container">
+                        <p id="nameT1">Bhupathi Akhila Reddy</p>
+                        <div class="print">
+                        <h5>Phone</h5>
+                        <p id="contactT">+91 8328504341</p>
+                        <h5>Email</h5>
+                        <p id="emailT">akhilareddy.bhupathi@gmail.com</p>
+                        <h5>Address</h5>
+                        <p id="addressT">Hanamkonda,India</p>
+                        </div>
+                    </div>
+
+                    <div class="social-icons">
+                        <a id="ldT" href="https://www.linkedin.com/in/bhupathi-akhila-reddy" target="_blank">
+                            <i class='bx bxl-linkedin'></i></a>
+                        <a id="inT" href="https://www.instagram.com/akhilareddy_7691" target="_blank">
+                            <i class='bx bxl-instagram'></i></a>
+                    </div>
+                    <a href="#" class="btn-box">More About Me</a>
+                </div>
+
+                <div class="col-md-8 py-5">
+
+                    <h1 id="nameT2" class="text-center" style="font-weight: 980">BHUPATHI AKHILA REDDY</h1>
+                    <p class="text-center">Future Full Stack Web Developer
+                    </p>
+
+                    <div class="objective mt-4">
+                        <div class="objective-header">
+                            <h3>OBJECTIVE</h3>
+                        </div>
+                        <div class="objective-body">
+                            <p id="objectiveT">I consider myself a responsible and hardworking person and
+                                 I am looking forward for my first work experience.</p>
+                        </div>
+                    </div>
+
+                    <div class="education mt-4">
+                        <div class="education-header">
+                            <h3>EDUCATION</h3>
+                        </div>
+                        <div class="education-body mt-1">
+                            <ul id="educationT">
+                            <li>Bachelor of Technology</li>
+                            <li>MPC</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="skills mt-4">
+                        <div class="skills-header">
+                            <h3>SKILLS</h3>
+                        </div>
+                        <div class="skills-body mt-1">
+                            <ul id="skillsT">
+                                <li>
+                                    Problem Solving Skills
+                                </li>
+                                <li>
+                                    Communication Skills
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="languages mt-4">
+                        <div class="languages-header">
+                            <h3>PROGRAMMING LANGUAGES KNOWN</h3>
+                        </div>
+                        <div class="languages mt-1">
+                            <ul id="languagesT">
+                                <li>Basics of C Programming</li>
+                                <li>Basics of Java Programming</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="pro mt-4">
+                        <div class="pro-header">
+                            <h3>PERSONAL PROJECTS AND CERTIFICATIONS</h3>
+                        </div>
+                        <div class="pro-body mt-1">
+                            <ul id="proT">
+                                <li>Portfolio Website</li>
+                                <li>Travel Blog Website</li>
+                                <li><a href="C:\Users\akhil\Downloads\Desktop\clmsCertificate.pdf" target="_blank">
+                                    Certified database with SQL Programming from Oracle</a></li>
+                                <li><a href="C:\Users\akhil\Downloads\Desktop\clmsCertificate (2).pdf" target="_blank">
+                                    Certified database design learner from Oracle</a></li>
+                                <li><a href="C:\Users\akhil\Downloads\Desktop\clmsCertificate (5).pdf" target="_blank">
+                                    Certified in Artificial Intelligence with Machine Learning in Java from Oracle</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                   
+
+
+                </div>
+            </div>
+            <div class="container text-center mt-3">
+                <button onclick="printCV()" class="btn btn-primary btn-lg">Print CV</button>
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+        crossorigin="anonymous"></script>
+        <script src="cv.js"></script>
+    </body>
+</html>
